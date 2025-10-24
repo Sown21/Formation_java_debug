@@ -25,12 +25,11 @@ public class AnalyticsCounter {
 		} catch (IOException e) {
             System.err.println("Error reading symptoms file: " + e.getMessage());
         }
-        System.out.println(symptomCounts);
-		// next generate output
-		FileWriter writer = new FileWriter ("result.out");
-		writer.write("headache: " + headacheCount + "\n");
-		writer.write("rash: " + rashCount + "\n");
-		writer.write("dialated pupils: " + pupilCount + "\n");
+
+        FileWriter writer = new FileWriter ("result.out");
+        for (Map.Entry<String, Integer> entry : symptomCounts.entrySet()) {
+            writer.write(entry.getKey() + ": " + entry.getValue() + "\n");
+        }
 		writer.close();
 	}
 }
