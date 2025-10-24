@@ -4,10 +4,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
 
-public class WriteSymptomDataToFile implements ISymptomWriter {
+public class writeSymptomDataToFile implements ISymptomWriter {
     private String finalPath;
 
-    public WriteSymptomDataToFile(String finalPath) {
+    public writeSymptomDataToFile(String finalPath) {
         this.finalPath = finalPath;
     }
 

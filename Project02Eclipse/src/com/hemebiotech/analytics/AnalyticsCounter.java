@@ -17,8 +17,8 @@ public class AnalyticsCounter {
         this.writer = writer;
     }
 
-    public List<String> getSymptoms() {
-        return reader.GetSymptoms();
+    public List<String> getAllSymptoms() {
+        return reader.getSymptoms();
     }
 
     public Map<String, Integer> countSymptoms(List<String> symptoms) {
