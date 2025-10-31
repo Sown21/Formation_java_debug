@@ -3,13 +3,13 @@ package com.hemebiotech.analytics;
 import java.util.Map;
 
 /**
- * Interface pour l'ecriture des symptomes et leur nombre d'occurences
+ * Interface for writing symptoms and their occurrence counts.
  */
 
 public interface ISymptomWriter {
     /**
-     * Ecrit les symptomes et leurs occurences dans le fichier output
-     * @param symptomCounts
+     * Writes symptoms and their occurrence counts to the output file.
+     * @param symptomCounts a map of symptoms and their counts
      */
     void writeSymptoms(Map<String, Integer> symptomCounts);
 }

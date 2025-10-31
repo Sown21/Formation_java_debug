@@ -4,13 +4,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Point d'enrée
+ * Entry point of the application.
  */
 
 public class Main {
     /**
-     * Methode principale qui execute les differentes etapes ( lecture / comptage / ecriture )
-     * @param args
+     * Main method that executes the steps (reading, counting, writing).
+     * @param args command line arguments
      */
     public static void main(String[] args) {
         ISymptomReader reader = new readSymptomDataFromFile("symptoms.txt");

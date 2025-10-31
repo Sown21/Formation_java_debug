@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * Classe principale qui effectue l'analyse des symptomes (lecture / comptage / ecriture)
+ * Main class that performs symptom analysis (reading, counting, writing).
  */
 
 public class AnalyticsCounter {
@@ -13,9 +13,9 @@ public class AnalyticsCounter {
     private final ISymptomWriter writer;
 
     /**
-     * Créé un objet AnalyticsCounter
-      * @param reader pour lire les symptomes
-     * @param writer pour écrire dans le fichier output
+     * Creates an AnalyticsCounter object.
+     * @param reader to read symptoms
+     * @param writer to write results to output file
      */
 
     public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer) {
@@ -24,8 +24,8 @@ public class AnalyticsCounter {
     }
 
     /**
-     * Recupère la liste de tous les symptomes
-     * @return la liste String des symptomes
+     * Retrieves the list of all symptoms.
+     * @return a list of symptom strings
      */
 
     public List<String> getAllSymptoms() {
@@ -33,9 +33,9 @@ public class AnalyticsCounter {
     }
 
     /**
-     * Compte le nombre d'occurences de chaque symptomes dans la map
-     * @param symptoms
-     * @return une map <symptomes, nombre d'occurence>
+     * Counts the occurrences of each symptom.
+     * @param symptoms the list of symptoms
+     * @return a map with symptoms as keys and their occurrence counts as values
      */
 
     public Map<String, Integer> countSymptoms(List<String> symptoms) {
@@ -47,8 +47,8 @@ public class AnalyticsCounter {
     }
 
     /**
-     * Ecrit les résultas dans le fichier output
-     * @param symptoms recupère la map de countSymptoms
+     * Writes the results to the output file.
+     * @param symptoms the map returned by countSymptoms
      */
 
     public void writeSymptoms(Map<String, Integer> symptoms) {

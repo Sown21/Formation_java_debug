@@ -3,17 +3,16 @@ package com.hemebiotech.analytics;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
-
 /**
- * Implementation de ISymptomWriter qui ecrit le symptomes et leurs occurences dans un fichier
+ * Implementation of ISymptomWriter that writes symptoms and their occurrence counts to a file.
  */
 
 public class writeSymptomDataToFile implements ISymptomWriter {
     private String finalPath;
 
     /**
-     * Constructeur pour ecrire les resultat dans un fichier
-     * @param finalPath fichier output
+     * Constructor to specify the output file path.
+     * @param finalPath the output file path
      */
 
     public writeSymptomDataToFile(String finalPath) {
@@ -21,8 +20,8 @@ public class writeSymptomDataToFile implements ISymptomWriter {
     }
 
     /**
-     * Ecrit chaque symptomes et occurence dans le fichier output
-     * @param symptoms
+     * Writes each symptom and its occurrence count to the output file.
+     * @param symptoms the map of symptoms and their counts
      */
 
     @Override
