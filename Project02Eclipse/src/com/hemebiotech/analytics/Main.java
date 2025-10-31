@@ -13,7 +13,7 @@ public class Main {
      * @param args command line arguments
      */
     public static void main(String[] args) {
-        ISymptomReader reader = new readSymptomDataFromFile("symptoms.txt");
+        ISymptomReader reader = new readSymptomDataFromFile("../symptoms.txt");
         ISymptomWriter writer = new writeSymptomDataToFile("result.out");
         AnalyticsCounter counter = new AnalyticsCounter(reader, writer);
 
